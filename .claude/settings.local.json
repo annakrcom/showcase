@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp -r en de)",
+      "Bash(cp -r en fr)",
+      "Bash(cp -r en it)",
+      "Bash(mkdir -p /Users/annakryzhanivska/WebstormProjects/porto/assets/images)",
+      "Bash(cp \"/Users/annakryzhanivska/Documents/TTTT1481-square-web.jpg\" /Users/annakryzhanivska/WebstormProjects/porto/assets/images/hero-portrait.jpg)"
+    ]
+  }
+}
