@@ -216,26 +216,31 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Services page: position bouncing arrows at the vertical middle of each row's right edge
+  // Services page: position bouncing arrows centered horizontally in the gap between each row's tiles
   (function initServicesJumps() {
     var section = document.querySelector('.services-section');
     if (!section) return;
     var jumps = section.querySelectorAll('.services-jump');
     if (!jumps.length) return;
-    var rowEnds = [
-      document.querySelector('.services-grid .card:nth-child(2)'),
-      document.querySelector('.services-grid .card:nth-child(4)')
+    var rowPairs = [
+      [document.querySelector('.services-grid .card:nth-child(1)'),
+       document.querySelector('.services-grid .card:nth-child(2)')],
+      [document.querySelector('.services-grid .card:nth-child(3)'),
+       document.querySelector('.services-grid .card:nth-child(4)')]
     ];
 
     function position() {
       var sectionRect = section.getBoundingClientRect();
-      rowEnds.forEach(function (c, i) {
-        if (!c || !jumps[i]) return;
-        var cardRect = c.getBoundingClientRect();
-        var slider = c.querySelector('.ba-slider');
-        var vRef = slider ? slider.getBoundingClientRect() : cardRect;
+      rowPairs.forEach(function (pair, i) {
+        var c1 = pair[0], c2 = pair[1];
+        if (!c1 || !c2 || !jumps[i]) return;
+        var c1Rect = c1.getBoundingClientRect();
+        var c2Rect = c2.getBoundingClientRect();
+        var slider = c2.querySelector('.ba-slider');
+        var vRef = slider ? slider.getBoundingClientRect() : c2Rect;
+        var midX = (c1Rect.right + c2Rect.left) / 2;
         jumps[i].style.top = (vRef.top + vRef.height / 2 - sectionRect.top) + 'px';
-        jumps[i].style.right = (sectionRect.right - cardRect.right) + 'px';
+        jumps[i].style.right = (sectionRect.right - midX) + 'px';
       });
     }
 
