@@ -9,7 +9,7 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="logo">Anna<span> </span>Kryzhanivska</a>
+      <a href="index.html" class="logo"><span>Anna Kryzhanivska</span><span class="logo-tagline">Photo Retouching Agency</span></a>
       <nav class="nav">
         <a href="index.html">About</a>
         <a href="services.html">Services</a>
@@ -28,10 +28,12 @@
     </div>
   </header>
 
-  <section class="container contact-grid">
+  <section class="container contact-section">
     <div class="contact-left">
-      <span class="eyebrow">Get in touch</span>
-      <h2>Let's work together</h2>
+      <div class="section-title section-title-underline">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Let's work together</h2>
+      </div>
       <p class="contact-intro">Have a project in mind or just want to say hello? Feel free to reach out — we'd love to hear from you.</p>
 
       <div class="availability">
@@ -45,42 +47,11 @@
 
       <div class="contact-direct">
         <a class="email" href="mailto:hello@example.com?subject=Retouching%20inquiry">hello@example.com</a>
+        <a class="telegram" href="https://t.me/annakryzhanivska_com" target="_blank" rel="noopener">Telegram →</a>
         <a class="linkedin" href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn →</a>
       </div>
     </div>
 
-    <div class="contact-right">
-      <form class="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain">
-        <label>
-          <span>Name</span>
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          <span>Company <em>(optional)</em></span>
-          <input type="text" name="company">
-        </label>
-        <label>
-          <span>Email</span>
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          <span>Project Type</span>
-          <select name="project-type" required>
-            <option value="" disabled selected>Select…</option>
-            <option>E-commerce</option>
-            <option>Lookbook / Campaign</option>
-            <option>Color Matching</option>
-            <option>General Inquiry</option>
-          </select>
-        </label>
-        <label>
-          <span>Message</span>
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button type="submit" class="btn">Send message</button>
-      </form>
-      <p class="form-helper">For a more accurate quote, please include the estimated number of images and your required turnaround time.</p>
-    </div>
   </section>
 
   <footer class="site-footer">

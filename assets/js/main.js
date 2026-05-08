@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function release() {
       if (!dragging) return;
       dragging = false;
+      document.body.classList.remove('slider-dragging');
       if (!hasMoved) {
         var card = slider.closest('.services-grid .card');
         if (card && !card.classList.contains('expanded')) expandCard(card);
@@ -67,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
       startX = e.clientX;
       hasMoved = false;
       dragging = true;
+      document.body.classList.add('slider-dragging');
     });
     window.addEventListener('mousemove', function (e) {
       if (!dragging) return;
@@ -80,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
       startX = e.touches[0].clientX;
       hasMoved = false;
       dragging = true;
+      document.body.classList.add('slider-dragging');
     }, { passive: true });
     window.addEventListener('touchmove', function (e) {
       if (!dragging) return;
@@ -90,10 +93,11 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('touchend', release);
   });
 
-  // Service / Work card expand / close
+  // Service / Work card expand / close (anchor cards just navigate)
   var expandableCards = document.querySelectorAll('.services-grid .card, .work-grid .card');
 
   expandableCards.forEach(function (card) {
+    if (card.tagName === 'A') return;
     card.addEventListener('click', function (e) {
       if (card.classList.contains('expanded')) return;
       if (e.target.closest('.card-close')) return;
@@ -109,7 +113,146 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Fullscreen image modal for portfolio category pages
+  var imageModal = document.querySelector('.image-modal');
+  var imageModalImg = imageModal ? imageModal.querySelector('.image-modal-img') : null;
+  var imageModalClose = imageModal ? imageModal.querySelector('.image-modal-close') : null;
+  var modalGallery = [];
+  var modalIndex = -1;
+
+  if (imageModal && !imageModal.querySelector('.image-modal-prev')) {
+    var prev = document.createElement('button');
+    prev.type = 'button';
+    prev.className = 'image-modal-nav image-modal-prev';
+    prev.setAttribute('aria-label', 'Previous image');
+    prev.textContent = '‹';
+    var next = document.createElement('button');
+    next.type = 'button';
+    next.className = 'image-modal-nav image-modal-next';
+    next.setAttribute('aria-label', 'Next image');
+    next.textContent = '›';
+    imageModal.appendChild(prev);
+    imageModal.appendChild(next);
+  }
+  var imageModalPrev = imageModal ? imageModal.querySelector('.image-modal-prev') : null;
+  var imageModalNext = imageModal ? imageModal.querySelector('.image-modal-next') : null;
+
+  function showModalImageAt(idx) {
+    if (!modalGallery.length || !imageModalImg) return;
+    var len = modalGallery.length;
+    modalIndex = ((idx % len) + len) % len;
+    var item = modalGallery[modalIndex];
+    var src = item.getAttribute('data-src');
+    var img = item.querySelector('img');
+    imageModalImg.src = src;
+    imageModalImg.alt = img ? img.alt : '';
+  }
+
+  function openImageModal(item) {
+    if (!imageModal || !imageModalImg) return;
+    var grid = item.parentElement;
+    modalGallery = grid ? Array.prototype.slice.call(grid.querySelectorAll('.portfolio-item')) : [item];
+    modalIndex = modalGallery.indexOf(item);
+    if (modalIndex < 0) modalIndex = 0;
+    showModalImageAt(modalIndex);
+    var multi = modalGallery.length > 1;
+    if (imageModalPrev) imageModalPrev.hidden = !multi;
+    if (imageModalNext) imageModalNext.hidden = !multi;
+    imageModal.hidden = false;
+    imageModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('image-modal-open');
+  }
+
+  function closeImageModal() {
+    if (!imageModal || !imageModalImg) return;
+    if (imageModal.hidden) return;
+    imageModal.hidden = true;
+    imageModal.setAttribute('aria-hidden', 'true');
+    imageModalImg.removeAttribute('src');
+    modalGallery = [];
+    modalIndex = -1;
+    document.body.classList.remove('image-modal-open');
+  }
+
+  document.querySelectorAll('.portfolio-item').forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      var src = item.getAttribute('data-src') || item.getAttribute('href');
+      if (!src) return;
+      e.preventDefault();
+      openImageModal(item);
+    });
+  });
+
+  if (imageModal) {
+    imageModal.addEventListener('click', function (e) {
+      if (e.target === imageModal) closeImageModal();
+    });
+  }
+  if (imageModalClose) {
+    imageModalClose.addEventListener('click', function (e) {
+      e.stopPropagation();
+      closeImageModal();
+    });
+  }
+  if (imageModalPrev) {
+    imageModalPrev.addEventListener('click', function (e) {
+      e.stopPropagation();
+      showModalImageAt(modalIndex - 1);
+    });
+  }
+  if (imageModalNext) {
+    imageModalNext.addEventListener('click', function (e) {
+      e.stopPropagation();
+      showModalImageAt(modalIndex + 1);
+    });
+  }
+
+  // Block right-click and drag on protected images
+  ['contextmenu', 'dragstart'].forEach(function (type) {
+    document.addEventListener(type, function (e) {
+      if (e.target.closest('.portfolio-item, .image-modal')) {
+        e.preventDefault();
+      }
+    });
+  });
+
+  // Services page: position bouncing arrows at the vertical middle of each row's right edge
+  (function initServicesJumps() {
+    var section = document.querySelector('.services-section');
+    if (!section) return;
+    var jumps = section.querySelectorAll('.services-jump');
+    if (!jumps.length) return;
+    var rowEnds = [
+      document.querySelector('.services-grid .card:nth-child(2)'),
+      document.querySelector('.services-grid .card:nth-child(4)')
+    ];
+
+    function position() {
+      var sectionRect = section.getBoundingClientRect();
+      rowEnds.forEach(function (c, i) {
+        if (!c || !jumps[i]) return;
+        var cardRect = c.getBoundingClientRect();
+        var slider = c.querySelector('.ba-slider');
+        var vRef = slider ? slider.getBoundingClientRect() : cardRect;
+        jumps[i].style.top = (vRef.top + vRef.height / 2 - sectionRect.top) + 'px';
+        jumps[i].style.right = (sectionRect.right - cardRect.right) + 'px';
+      });
+    }
+
+    position();
+    window.addEventListener('resize', position);
+    window.addEventListener('load', position);
+  })();
+
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeExpandedCard();
+    if (e.key === 'Escape') {
+      closeImageModal();
+      closeExpandedCard();
+      return;
+    }
+    if (imageModal && !imageModal.hidden) {
+      if (e.key === 'ArrowLeft') showModalImageAt(modalIndex - 1);
+      if (e.key === 'ArrowRight') showModalImageAt(modalIndex + 1);
+    }
   });
 });
