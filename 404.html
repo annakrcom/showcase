@@ -2,18 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>404 — Page Not Found</title>
+  <title>Page not found — Anna Kryzhanivska</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="eyebrow">Error 404</div>
-      <h1>Page not found</h1>
-      <p>The page you're looking for doesn't exist.</p>
-      <p><a class="btn" href="/en/index.html">Back to home</a></p>
+  <header class="site-header">
+    <div class="container">
+      <a href="en/index.html" class="logo"><span>Anna Kryzhanivska</span><span class="logo-tagline">Photo Retouching Agency</span></a>
+      <nav class="nav">
+        <a href="en/index.html">About</a>
+        <a href="en/services.html">Services</a>
+        <a href="en/portfolio.html">Our Work</a>
+        <a href="en/experience.html">Experience</a>
+        <a href="en/faq.html">FAQ</a>
+        <a href="en/contact.html">Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <a href="en/index.html" class="active">EN</a>
+        <a href="de/index.html">DE</a>
+        <a href="fr/index.html">FR</a>
+        <a href="it/index.html">IT</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="container error-section">
+    <div class="error-content">
+      <h1 class="error-code"><span class="gradient">404</span></h1>
+      <h2>Page not found</h2>
+      <p>The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
+      <a class="btn" href="en/index.html">Back to home</a>
     </div>
   </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Anna Kryzhanivska. All rights reserved.</p>
+      <div class="lang-switch">
+        <a href="en/index.html" class="active">EN</a>
+        <a href="de/index.html">DE</a>
+        <a href="fr/index.html">FR</a>
+        <a href="it/index.html">IT</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

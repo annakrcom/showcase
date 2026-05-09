@@ -111,11 +111,43 @@ p { margin: 0 0 1rem; color: var(--muted); }
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
-.hero-text h1 .gradient {
+.hero-text h1 .gradient,
+.gradient {
   background: linear-gradient(90deg, #d4b06a 0%, #f3d27a 50%, #b8924a 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* ---------- 404 page ---------- */
+.error-section {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+.error-content { max-width: 38rem; }
+.error-code {
+  font-size: clamp(6rem, 18vw, 11rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+.error-content h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+}
+.error-content p {
+  color: var(--muted);
+  margin-bottom: 2rem;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-text p { font-size: 1.05rem; margin-bottom: 2rem; max-width: 34rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
@@ -217,6 +249,26 @@ p { margin: 0 0 1rem; color: var(--muted); }
   .contact-grid > .contact-direct-full { animation: none; }
 }
 
+/* Services + Our Work: stagger each card in one-by-one instead of the whole grid */
+.container > .section-title:first-child + .services-grid,
+.container > .section-title:first-child + .work-grid { animation: none; }
+.services-grid > .card,
+.work-grid > .work-card {
+  animation: page-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) backwards;
+}
+.services-grid > .card:nth-child(1),
+.work-grid > .work-card:nth-child(1) { animation-delay: 0.2s; }
+.services-grid > .card:nth-child(2),
+.work-grid > .work-card:nth-child(2) { animation-delay: 0.35s; }
+.services-grid > .card:nth-child(3),
+.work-grid > .work-card:nth-child(3) { animation-delay: 0.5s; }
+.services-grid > .card:nth-child(4),
+.work-grid > .work-card:nth-child(4) { animation-delay: 0.65s; }
+@media (prefers-reduced-motion: reduce) {
+  .services-grid > .card,
+  .work-grid > .work-card { animation: none; }
+}
+
 #about { scroll-margin-top: 80px; }
 html { scroll-behavior: smooth; }
 
@@ -269,6 +321,8 @@ section:first-of-type:not(.hero) { padding-top: 1.75rem; }
   text-transform: uppercase; letter-spacing: 0.3em;
   font-size: 0.75rem; color: var(--accent); display: block; margin-bottom: 0.75rem;
 }
+.section-title .eyebrow a { color: var(--text); transition: color 0.2s; }
+.section-title .eyebrow a:hover { color: var(--accent); }
 
 /* ---------- Grids ---------- */
 .grid { display: grid; gap: 1.5rem; }
