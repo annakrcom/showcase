@@ -6,7 +6,12 @@
       "Bash(cp -r en it)",
       "Bash(mkdir -p /Users/annakryzhanivska/WebstormProjects/porto/assets/images)",
       "Bash(cp \"/Users/annakryzhanivska/Documents/TTTT1481-square-web.jpg\" /Users/annakryzhanivska/WebstormProjects/porto/assets/images/hero-portrait.jpg)",
-      "Bash(node --check /Users/annakryzhanivska/WebstormProjects/porto/assets/js/cookie-consent.js)"
+      "Bash(node --check /Users/annakryzhanivska/WebstormProjects/porto/assets/js/cookie-consent.js)",
+      "Bash(curl -fsSL -o Inter-Regular.woff2 \"https://rsms.me/inter/font-files/Inter-Regular.woff2?v=4.0\")",
+      "Bash(curl -fsSL -o Inter-SemiBold.woff2 \"https://rsms.me/inter/font-files/Inter-SemiBold.woff2?v=4.0\")",
+      "Bash(curl -fsSL -o Inter-Bold.woff2 \"https://rsms.me/inter/font-files/Inter-Bold.woff2?v=4.0\")",
+      "Bash(file /Users/annakryzhanivska/WebstormProjects/porto/assets/fonts/inter/*.woff2)",
+      "Bash(xxd)"
     ]
   }
 }

@@ -2,18 +2,48 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>I nostri lavori — Anna Kryzhanivska</title>
+  <title>Lavori — Anna Kryzhanivska</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://annakryzhanivska.com/it/portfolio.html#webpage",
+        "url": "https://annakryzhanivska.com/it/portfolio.html",
+        "name": "Lavori — Anna Kryzhanivska Ritocco fotografico",
+        "description": "Selezione di lavori di ritocco in e-commerce modelli, still life, packshot e fotografia di campagna.",
+        "inLanguage": "it",
+        "isPartOf": { "@id": "https://annakryzhanivska.com/#website" },
+        "about": { "@id": "https://annakryzhanivska.com/#organization" },
+        "hasPart": [
+          { "@type": "ImageGallery", "name": "E-Commerce Modelli", "url": "https://annakryzhanivska.com/it/portfolio-model-ecommerce.html" },
+          { "@type": "ImageGallery", "name": "Still Life", "url": "https://annakryzhanivska.com/it/portfolio-still-life.html" },
+          { "@type": "ImageGallery", "name": "Packshot", "url": "https://annakryzhanivska.com/it/portfolio-packshot.html" },
+          { "@type": "ImageGallery", "name": "Campagna", "url": "https://annakryzhanivska.com/it/portfolio-campaign.html" }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://annakryzhanivska.com/it/" },
+          { "@type": "ListItem", "position": 2, "name": "Lavori", "item": "https://annakryzhanivska.com/it/portfolio.html" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="logo">Anna<span> </span>Kryzhanivska</a>
+      <a href="index.html" class="logo"><span>Anna Kryzhanivska</span><span class="logo-tagline">Agenzia di ritocco fotografico</span></a>
       <nav class="nav">
-        <a href="index.html">Chi sono</a>
+        <a href="index.html">Chi siamo</a>
         <a href="services.html">Servizi</a>
-        <a href="portfolio.html" class="active">I nostri lavori</a>
+        <a href="portfolio.html" class="active">Lavori</a>
         <a href="experience.html">Esperienza</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contatti</a>
@@ -29,73 +59,51 @@
   </header>
 
   <section class="container">
-    <div class="section-title">
+    <div class="section-title section-title-underline">
       <span class="eyebrow">Lavori selezionati</span>
       <h2>I nostri lavori</h2>
     </div>
-    <div class="portfolio-categories">
-      <details class="portfolio-cat">
-        <summary><img class="cat-preview" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='100'%3E%3Crect fill='%231a1a1a' width='400' height='100'/%3E%3C/svg%3E" alt="E-Commerce">E-Commerce</summary>
-        <div class="portfolio-grid">
-          <div class="portfolio-item" data-label="E-Commerce 01"></div>
-          <div class="portfolio-item" data-label="E-Commerce 02"></div>
-          <div class="portfolio-item" data-label="E-Commerce 03"></div>
-          <div class="portfolio-item" data-label="E-Commerce 04"></div>
-          <div class="portfolio-item" data-label="E-Commerce 05"></div>
-          <div class="portfolio-item" data-label="E-Commerce 06"></div>
-          <div class="portfolio-item" data-label="E-Commerce 07"></div>
-          <div class="portfolio-item" data-label="E-Commerce 08"></div>
-          <div class="portfolio-item" data-label="E-Commerce 09"></div>
+    <div class="grid work-grid">
+      <a class="card work-card" href="portfolio-model-ecommerce.html">
+        <img class="work-preview" src="../assets/images/gallery%20thumbnails/model-e-commerce-thumbnail.jpg" alt="E-Commerce Modelli">
+        <div class="work-card-title">
+          <h3>E-Commerce Modelli</h3>
+          <span class="work-cta">Vedi la galleria →</span>
         </div>
-      </details>
-      <details class="portfolio-cat">
-        <summary><img class="cat-preview" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='100'%3E%3Crect fill='%231a1a1a' width='400' height='100'/%3E%3C/svg%3E" alt="Prodotto">Prodotto</summary>
-        <div class="portfolio-grid">
-          <div class="portfolio-item" data-label="Prodotto 01"></div>
-          <div class="portfolio-item" data-label="Prodotto 02"></div>
-          <div class="portfolio-item" data-label="Prodotto 03"></div>
-          <div class="portfolio-item" data-label="Prodotto 04"></div>
-          <div class="portfolio-item" data-label="Prodotto 05"></div>
-          <div class="portfolio-item" data-label="Prodotto 06"></div>
-          <div class="portfolio-item" data-label="Prodotto 07"></div>
-          <div class="portfolio-item" data-label="Prodotto 08"></div>
-          <div class="portfolio-item" data-label="Prodotto 09"></div>
+      </a>
+      <a class="card work-card" href="portfolio-still-life.html">
+        <img class="work-preview" src="../assets/images/gallery%20thumbnails/still-life-thumbnail.jpg" alt="Still Life">
+        <div class="work-card-title">
+          <h3>Still Life</h3>
+          <span class="work-cta">Vedi la galleria →</span>
         </div>
-      </details>
-      <details class="portfolio-cat">
-        <summary><img class="cat-preview" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='100'%3E%3Crect fill='%231a1a1a' width='400' height='100'/%3E%3C/svg%3E" alt="Campagna">Campagna</summary>
-        <div class="portfolio-grid">
-          <div class="portfolio-item" data-label="Campagna 01"></div>
-          <div class="portfolio-item" data-label="Campagna 02"></div>
-          <div class="portfolio-item" data-label="Campagna 03"></div>
-          <div class="portfolio-item" data-label="Campagna 04"></div>
-          <div class="portfolio-item" data-label="Campagna 05"></div>
-          <div class="portfolio-item" data-label="Campagna 06"></div>
-          <div class="portfolio-item" data-label="Campagna 07"></div>
-          <div class="portfolio-item" data-label="Campagna 08"></div>
-          <div class="portfolio-item" data-label="Campagna 09"></div>
+      </a>
+      <a class="card work-card" href="portfolio-packshot.html">
+        <img class="work-preview" src="../assets/images/gallery%20thumbnails/packshot-thumbnail.jpg" alt="Packshot">
+        <div class="work-card-title">
+          <h3>Packshot</h3>
+          <span class="work-cta">Vedi la galleria →</span>
         </div>
-      </details>
-      <details class="portfolio-cat">
-        <summary><img class="cat-preview" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='100'%3E%3Crect fill='%231a1a1a' width='400' height='100'/%3E%3C/svg%3E" alt="Packshot">Packshot</summary>
-        <div class="portfolio-grid">
-          <div class="portfolio-item" data-label="Packshot 01"></div>
-          <div class="portfolio-item" data-label="Packshot 02"></div>
-          <div class="portfolio-item" data-label="Packshot 03"></div>
-          <div class="portfolio-item" data-label="Packshot 04"></div>
-          <div class="portfolio-item" data-label="Packshot 05"></div>
-          <div class="portfolio-item" data-label="Packshot 06"></div>
-          <div class="portfolio-item" data-label="Packshot 07"></div>
-          <div class="portfolio-item" data-label="Packshot 08"></div>
-          <div class="portfolio-item" data-label="Packshot 09"></div>
+      </a>
+      <a class="card work-card" href="portfolio-campaign.html">
+        <img class="work-preview" src="../assets/images/gallery%20thumbnails/campaign-thumbnail.jpg" alt="Campagna">
+        <div class="work-card-title">
+          <h3>Campagna</h3>
+          <span class="work-cta">Vedi la galleria →</span>
         </div>
-      </details>
+      </a>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Anna Kryzhanivska. Tutti i diritti riservati.</p>
+      <p>© <span class="copyright-year">2026</span> Anna Kryzhanivska</p>
+      <div class="footer-policy">
+        <a href="legal-notice.html">Note legali</a>
+        <a href="terms-and-conditions.html">Termini e condizioni</a>
+        <a href="privacy-policy.html">Informativa sulla privacy</a>
+        <a href="cookie-management.html">Gestisci cookie</a>
+      </div>
       <div class="lang-switch">
         <a href="../en/portfolio.html">EN</a>
         <a href="../de/portfolio.html">DE</a>
@@ -105,5 +113,6 @@
     </div>
   </footer>
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/cookie-consent.js"></script>
 </body>
 </html>

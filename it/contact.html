@@ -5,15 +5,51 @@
   <title>Contatti — Anna Kryzhanivska</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "@id": "https://annakryzhanivska.com/it/contact.html#webpage",
+        "url": "https://annakryzhanivska.com/it/contact.html",
+        "name": "Contatti — Anna Kryzhanivska Agenzia di ritocco fotografico",
+        "description": "Contatta l'Agenzia di ritocco fotografico Anna Kryzhanivska. Aperti a nuovi progetti e richieste di ogni dimensione; risposta entro 24 ore lavorative.",
+        "inLanguage": "it",
+        "isPartOf": { "@id": "https://annakryzhanivska.com/#website" },
+        "about": { "@id": "https://annakryzhanivska.com/#organization" },
+        "mainEntity": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Service",
+          "email": "hello@annakryzhanivska.com",
+          "availableLanguage": ["English", "German", "French", "Italian", "Ukrainian"],
+          "areaServed": "Worldwide",
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "description": "Risposta entro 24 ore lavorative, Ora dell'Europa centrale (CET)"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://annakryzhanivska.com/it/" },
+          { "@type": "ListItem", "position": 2, "name": "Contatti", "item": "https://annakryzhanivska.com/it/contact.html" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="logo">Anna<span> </span>Kryzhanivska</a>
+      <a href="index.html" class="logo"><span>Anna Kryzhanivska</span><span class="logo-tagline">Agenzia di ritocco fotografico</span></a>
       <nav class="nav">
-        <a href="index.html">Chi sono</a>
+        <a href="index.html">Chi siamo</a>
         <a href="services.html">Servizi</a>
-        <a href="portfolio.html">I nostri lavori</a>
+        <a href="portfolio.html">Lavori</a>
         <a href="experience.html">Esperienza</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html" class="active">Contatti</a>
@@ -28,23 +64,66 @@
     </div>
   </header>
 
-  <section class="container">
-    <div class="section-title">
-      <span class="eyebrow">Mettiti in contatto</span>
-      <h2>Lavoriamo insieme</h2>
-    </div>
-    <div class="contact-wrap">
-      <p>Hai un progetto in mente o vuoi semplicemente fare una domanda? Scrivici — saremo felici di sentirti.</p>
-      <a class="btn" href="mailto:hello@example.com?subject=Richiesta%20di%20ritocco">hello@example.com</a>
-      <div class="socials">
-        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+  <section class="container contact-grid">
+    <div class="contact-left">
+      <div class="section-title section-title-underline">
+        <span class="eyebrow">Mettiti in contatto</span>
+        <h2>Lavoriamo insieme</h2>
       </div>
+      <p class="contact-intro">Siamo aperti a nuovi progetti e a richieste di qualsiasi dimensione. Se hai domande sul nostro processo di ritocco o vuoi discutere una possibile collaborazione, sentiti libero di inviarci un messaggio. Siamo qui per aiutarti a trovare l'approccio migliore per i tuoi contenuti visivi.</p>
+
+      <div class="availability">
+        <h3>Disponibilità</h3>
+        <ul>
+          <li><span>Sede</span> Con base in Europa, disponibili da remoto in tutto il mondo</li>
+          <li><span>Fuso orario</span> Ora dell'Europa centrale (CET)</li>
+          <li><span>Tempo di risposta</span> Meno di 24 ore lavorative</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="contact-right">
+      <div class="section-title section-title-underline">
+        <span class="eyebrow">Cosa includere</span>
+        <h2>Brief di progetto</h2>
+      </div>
+      <p class="contact-intro">Per aiutarci a fornire una stima e una tempistica accurate, includi nel tuo messaggio:</p>
+
+      <div class="briefing">
+        <ul>
+          <li><span>Ambito</span> Numero stimato di asset e requisiti tecnici.</li>
+          <li><span>Tempistiche</span> Scadenze del progetto o date di consegna previste.</li>
+          <li><span>Stile</span> Immagini di riferimento o linee guida di brand esistenti.</li>
+        </ul>
+      </div>
+
+      <p class="form-helper">Se non sei sicuro dei tuoi requisiti specifici, offriamo servizi di audit e consulenza per aiutarti a definire le esigenze del progetto.</p>
+    </div>
+
+    <div class="contact-direct contact-direct-inline contact-direct-full">
+      <a class="email" href="mailto:hello@annakryzhanivska.com?subject=Richiesta%20di%20ritocco">hello@annakryzhanivska.com</a>
+      <a class="icon-link icon-link-telegram" href="https://t.me/annakryzhanivska_com" target="_blank" rel="noopener" aria-label="Telegram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" aria-hidden="true">
+          <circle cx="120" cy="120" r="120" fill="currentColor"/>
+          <path fill="#000" d="M81.486 130.178 52.2 120.636s-3.5-1.42-2.373-4.64c.232-.664.7-1.229 2.1-2.2 6.489-4.523 120.106-45.36 120.106-45.36s3.208-1.081 5.1-.362a2.766 2.766 0 0 1 1.886 2.046 9.71 9.71 0 0 1 .234 2.733c-.008.789-.1 1.52-.171 2.67-.721 11.626-22.34 98.683-22.34 98.683s-1.293 5.092-5.93 5.265a8.5 8.5 0 0 1-6.224-2.4c-9.165-7.881-40.836-29.16-47.831-33.844a1.343 1.343 0 0 1-.578-.953c-.1-.5.444-1.117.444-1.117s55.142-49.005 56.61-54.149c.114-.4-.318-.6-.9-.422-3.69 1.358-67.617 41.736-74.674 46.193a3.382 3.382 0 0 1-1.989.087z"/>
+        </svg>
+      </a>
+      <a class="icon-link" href="https://www.linkedin.com/in/annakryzhanivska" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.78-1.75-1.73s.78-1.73 1.75-1.73 1.75.78 1.75 1.73-.78 1.73-1.75 1.73zm13.5 12.27h-3v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7h-3v-11h2.88v1.5h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v6.47z"/></svg>
+      </a>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Anna Kryzhanivska. Tutti i diritti riservati.</p>
+      <p>© <span class="copyright-year">2026</span> Anna Kryzhanivska</p>
+      <div class="footer-policy">
+        <a href="legal-notice.html">Note legali</a>
+        <a href="terms-and-conditions.html">Termini e condizioni</a>
+        <a href="privacy-policy.html">Informativa sulla privacy</a>
+        <a href="cookie-management.html">Gestisci cookie</a>
+      </div>
       <div class="lang-switch">
         <a href="../en/contact.html">EN</a>
         <a href="../de/contact.html">DE</a>
@@ -54,5 +133,6 @@
     </div>
   </footer>
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/cookie-consent.js"></script>
 </body>
 </html>
