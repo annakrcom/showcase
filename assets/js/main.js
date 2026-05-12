@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  var currentYear = String(new Date().getFullYear());
+  document.querySelectorAll('.copyright-year').forEach(function (el) {
+    el.textContent = currentYear;
+  });
+
   var cardClose = document.querySelector('.card-close');
   var DRAG_THRESHOLD = 4;
 
