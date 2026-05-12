@@ -28,6 +28,7 @@ img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 
 :root {
+  color-scheme: dark;
   --bg: #000000;
   --bg-alt: #000000;
   --text: #e8e8e8;
@@ -110,7 +111,6 @@ p { margin: 0 0 1rem; color: var(--muted); }
 /* ---------- Hero (split: text left, portrait right) ---------- */
 .hero {
   position: relative;
-  min-height: calc(80vh - 70px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
@@ -133,6 +133,7 @@ p { margin: 0 0 1rem; color: var(--muted); }
   font-weight: 700;
   letter-spacing: -0.01em;
   text-transform: uppercase;
+  line-height: 1.1;
 }
 .hero-text h1 .gradient,
 .gradient {
@@ -178,8 +179,9 @@ p { margin: 0 0 1rem; color: var(--muted); }
 
 .hero-portrait {
   background-image: url('../images/hero-portrait.jpg');
-  background-size: cover;
-  background-position: center;
+  background-size: auto 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
   min-height: 100%;
 }
 
@@ -295,13 +297,9 @@ p { margin: 0 0 1rem; color: var(--muted); }
 #about { scroll-margin-top: 80px; }
 html { scroll-behavior: smooth; }
 
-@media (min-width: 801px) and (max-width: 1024px) {
-  .hero { min-height: auto; }
-  .hero-text { padding-bottom: 1.5rem; }
-}
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .hero { grid-template-columns: 1fr; min-height: auto; padding-bottom: 1.5rem; }
-  .hero-portrait { min-height: 39vh; height: 39vh; order: -1; background-position: center top; }
+  .hero-portrait { min-height: 39vh; height: 39vh; order: -1; background-size: cover; background-position: center top; }
   .hero-text { padding: 1.5rem 1.5rem 0.5rem; margin: 0; }
   .hero-text h1 { margin-bottom: 1rem; }
   .hero-text p { margin-bottom: 1.25rem; }
