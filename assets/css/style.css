@@ -295,6 +295,10 @@ p { margin: 0 0 1rem; color: var(--muted); }
 #about { scroll-margin-top: 80px; }
 html { scroll-behavior: smooth; }
 
+@media (min-width: 801px) and (max-width: 1024px) {
+  .hero { min-height: auto; }
+  .hero-text { padding-bottom: 1.5rem; }
+}
 @media (max-width: 800px) {
   .hero { grid-template-columns: 1fr; min-height: auto; padding-bottom: 1.5rem; }
   .hero-portrait { min-height: 39vh; height: 39vh; order: -1; background-position: center top; }
