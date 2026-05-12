@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestione dei cookie — Anna Kryzhanivska</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gestisci le tue preferenze sui cookie per il sito dell'agenzia di ritocco fotografico Anna Kryzhanivska.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo"><span>Anna Kryzhanivska</span><span class="logo-tagline">Agenzia di ritocco fotografico</span></a>
+      <nav class="nav">
+        <a href="index.html">Chi siamo</a>
+        <a href="services.html">Servizi</a>
+        <a href="portfolio.html">Lavori</a>
+        <a href="experience.html">Esperienza</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contatti</a>
+      </nav>
+      <div class="lang-switch">
+        <a href="../en/cookie-management.html">EN</a>
+        <a href="../de/cookie-management.html">DE</a>
+        <a href="../fr/cookie-management.html">FR</a>
+        <a href="cookie-management.html" class="active">IT</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="legal-page">
+    <div class="section-title section-title-underline">
+      <span class="eyebrow">Preferenze</span>
+      <h2>Gestione dei cookie</h2>
+    </div>
+
+    <p>Questo sito carica strumenti di analytics e di performance solo dopo aver ricevuto il vostro consenso esplicito. Potete modificare o revocare la scelta in qualsiasi momento qui sotto.</p>
+
+    <h3>La vostra scelta attuale</h3>
+    <div class="cookie-status" aria-live="polite">
+      <span class="cookie-status-label">Stato</span>
+      <span class="cookie-status-value" data-status="unknown" id="consent-status-value">Non impostato</span>
+      <span class="cookie-status-meta" id="consent-status-meta">Non è ancora stata registrata alcuna scelta. Il banner apparirà alla vostra prossima visita.</span>
+    </div>
+
+    <div class="cookie-controls">
+      <button type="button" class="btn" data-cookie-action="accept">Accetta analytics</button>
+      <button type="button" class="btn" data-cookie-action="decline">Rifiuta analytics</button>
+      <button type="button" class="btn" data-cookie-action="reset">Reimposta scelta &amp; riapri banner</button>
+    </div>
+
+    <h3>Cosa viene impostato in caso di accettazione</h3>
+    <p>Accettando si caricano due script di terze parti. I cookie da essi impostati, in sintesi:</p>
+    <table class="legal-table">
+      <thead>
+        <tr>
+          <th>Fornitore</th>
+          <th>Cookie / archiviazione</th>
+          <th>Finalità</th>
+          <th>Conservazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Analytics 4</td>
+          <td>_ga, _ga_*</td>
+          <td>Distinzione dei visitatori, statistiche di traffico aggregate</td>
+          <td>Fino a 2 anni</td>
+        </tr>
+        <tr>
+          <td>Microsoft Clarity</td>
+          <td>_clck, _clsk, MUID, CLID, ANONCHK</td>
+          <td>Session replay anonimi, heatmap, analisi delle interazioni</td>
+          <td>Fino a 1 anno</td>
+        </tr>
+        <tr>
+          <td>Questo sito</td>
+          <td>cookie_consent (localStorage)</td>
+          <td>Memorizza la vostra scelta di consenso per non mostrare nuovamente il banner</td>
+          <td>365 giorni</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Come funziona la revoca</h3>
+    <p>Rifiutare o reimpostare la vostra scelta impedisce immediatamente il caricamento degli script di analytics nelle visite successive. I cookie già impostati da fornitori precedentemente accettati possono restare nel browser fino alla loro scadenza naturale: potete eliminarli in qualsiasi momento tramite le impostazioni del browser.</p>
+
+    <p>Per i dettagli sulla base giuridica, sui periodi di conservazione e sui vostri diritti, consultate l'<a href="privacy-policy.html">informativa sulla privacy</a>.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span class="copyright-year">2026</span> Anna Kryzhanivska</p>
+      <div class="footer-policy">
+        <a href="legal-notice.html">Note legali</a>
+        <a href="terms-and-conditions.html">Termini e condizioni</a>
+        <a href="privacy-policy.html">Informativa sulla privacy</a>
+        <a href="cookie-management.html">Gestisci cookie</a>
+      </div>
+      <div class="lang-switch">
+        <a href="../en/cookie-management.html">EN</a>
+        <a href="../de/cookie-management.html">DE</a>
+        <a href="../fr/cookie-management.html">FR</a>
+        <a href="cookie-management.html" class="active">IT</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/cookie-consent.js"></script>
+  <script>
+    (function () {
+      var valueEl = document.getElementById('consent-status-value');
+      var metaEl = document.getElementById('consent-status-meta');
+      if (!valueEl || !metaEl || !window.CookieConsent) return;
+
+      function fmt(iso) {
+        try {
+          var d = new Date(iso);
+          return d.toLocaleString();
+        } catch (e) { return iso; }
+      }
+
+      function refresh() {
+        var status = window.CookieConsent.status();
+        if (!status) {
+          valueEl.textContent = 'Non impostato';
+          valueEl.setAttribute('data-status', 'unknown');
+          metaEl.textContent = 'Non è ancora stata registrata alcuna scelta. Il banner apparirà alla vostra prossima visita.';
+          return;
+        }
+        if (status.consent_status) {
+          valueEl.textContent = 'Accettato';
+          valueEl.setAttribute('data-status', 'accepted');
+        } else {
+          valueEl.textContent = 'Rifiutato';
+          valueEl.setAttribute('data-status', 'declined');
+        }
+        metaEl.textContent = 'Registrato il ' + fmt(status.timestamp) +
+          ' · policy v' + status.policy_version;
+      }
+
+      document.querySelectorAll('[data-cookie-action]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var action = btn.getAttribute('data-cookie-action');
+          if (action === 'accept') window.CookieConsent.accept();
+          else if (action === 'decline') window.CookieConsent.decline();
+          else if (action === 'reset') window.CookieConsent.reset();
+        });
+      });
+
+      document.addEventListener('cookieconsent:change', refresh);
+      refresh();
+    })();
+  </script>
+</body>
+</html>

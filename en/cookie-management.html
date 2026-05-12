@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Management — Anna Kryzhanivska</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manage your cookie preferences for the Anna Kryzhanivska photo retouching agency website.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo"><span>Anna Kryzhanivska</span><span class="logo-tagline">Photo Retouching Agency</span></a>
+      <nav class="nav">
+        <a href="index.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Our Work</a>
+        <a href="experience.html">Experience</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <a href="cookie-management.html" class="active">EN</a>
+        <a href="../de/cookie-management.html">DE</a>
+        <a href="../fr/cookie-management.html">FR</a>
+        <a href="../it/cookie-management.html">IT</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="legal-page">
+    <div class="section-title section-title-underline">
+      <span class="eyebrow">Preferences</span>
+      <h2>Cookie Management</h2>
+    </div>
+
+    <p>This site loads analytics and performance tools only after you give explicit consent. You can change or withdraw your choice at any time below.</p>
+
+    <h3>Your current choice</h3>
+    <div class="cookie-status" aria-live="polite">
+      <span class="cookie-status-label">Status</span>
+      <span class="cookie-status-value" data-status="unknown" id="consent-status-value">Not set</span>
+      <span class="cookie-status-meta" id="consent-status-meta">No choice has been recorded yet. The banner will appear on your next visit.</span>
+    </div>
+
+    <div class="cookie-controls">
+      <button type="button" class="btn" data-cookie-action="accept">Accept analytics</button>
+      <button type="button" class="btn" data-cookie-action="decline">Decline analytics</button>
+      <button type="button" class="btn" data-cookie-action="reset">Reset choice &amp; reopen banner</button>
+    </div>
+
+    <h3>What is set when you accept</h3>
+    <p>Accepting loads two third-party scripts. The cookies they set, summarised:</p>
+    <table class="legal-table">
+      <thead>
+        <tr>
+          <th>Provider</th>
+          <th>Cookies / storage</th>
+          <th>Purpose</th>
+          <th>Retention</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Analytics 4</td>
+          <td>_ga, _ga_*</td>
+          <td>Distinguishing visitors, aggregated traffic stats</td>
+          <td>Up to 2 years</td>
+        </tr>
+        <tr>
+          <td>Microsoft Clarity</td>
+          <td>_clck, _clsk, MUID, CLID, ANONCHK</td>
+          <td>Anonymous session replay, heatmaps, interaction analytics</td>
+          <td>Up to 1 year</td>
+        </tr>
+        <tr>
+          <td>This site</td>
+          <td>cookie_consent (localStorage)</td>
+          <td>Stores your consent choice so the banner isn't shown again</td>
+          <td>365 days</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>How withdrawal works</h3>
+    <p>Declining or resetting your choice immediately prevents analytics scripts from being loaded on subsequent page views. Cookies already set by previously accepted providers may persist in your browser until their natural expiry — you can clear them at any time through your browser's settings.</p>
+
+    <p>For details on the legal basis, retention periods and your rights, see the <a href="privacy-policy.html">privacy policy</a>.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span class="copyright-year">2026</span> Anna Kryzhanivska</p>
+      <div class="footer-policy">
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="cookie-management.html">Manage Cookies</a>
+      </div>
+      <div class="lang-switch">
+        <a href="cookie-management.html" class="active">EN</a>
+        <a href="../de/cookie-management.html">DE</a>
+        <a href="../fr/cookie-management.html">FR</a>
+        <a href="../it/cookie-management.html">IT</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/cookie-consent.js"></script>
+  <script>
+    (function () {
+      var valueEl = document.getElementById('consent-status-value');
+      var metaEl = document.getElementById('consent-status-meta');
+      if (!valueEl || !metaEl || !window.CookieConsent) return;
+
+      function fmt(iso) {
+        try {
+          var d = new Date(iso);
+          return d.toLocaleString();
+        } catch (e) { return iso; }
+      }
+
+      function refresh() {
+        var status = window.CookieConsent.status();
+        if (!status) {
+          valueEl.textContent = 'Not set';
+          valueEl.setAttribute('data-status', 'unknown');
+          metaEl.textContent = 'No choice has been recorded yet. The banner will appear on your next visit.';
+          return;
+        }
+        if (status.consent_status) {
+          valueEl.textContent = 'Accepted';
+          valueEl.setAttribute('data-status', 'accepted');
+        } else {
+          valueEl.textContent = 'Declined';
+          valueEl.setAttribute('data-status', 'declined');
+        }
+        metaEl.textContent = 'Recorded on ' + fmt(status.timestamp) +
+          ' · policy v' + status.policy_version;
+      }
+
+      document.querySelectorAll('[data-cookie-action]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var action = btn.getAttribute('data-cookie-action');
+          if (action === 'accept') window.CookieConsent.accept();
+          else if (action === 'decline') window.CookieConsent.decline();
+          else if (action === 'reset') window.CookieConsent.reset();
+        });
+      });
+
+      document.addEventListener('cookieconsent:change', refresh);
+      refresh();
+    })();
+  </script>
+</body>
+</html>

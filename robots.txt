@@ -1,0 +1,26 @@
+# robots.txt for annakryzhanivska.com
+# The site is open to all crawlers for SEO.
+# Legal, privacy, and terms pages are excluded from every crawler
+# (search engines and AI agents alike).
+
+User-agent: *
+Disallow: /en/privacy-policy.html
+Disallow: /de/privacy-policy.html
+Disallow: /fr/privacy-policy.html
+Disallow: /it/privacy-policy.html
+Disallow: /en/legal-notice.html
+Disallow: /de/legal-notice.html
+Disallow: /fr/legal-notice.html
+Disallow: /it/legal-notice.html
+Disallow: /en/terms-and-conditions.html
+Disallow: /de/terms-and-conditions.html
+Disallow: /fr/terms-and-conditions.html
+Disallow: /it/terms-and-conditions.html
+Disallow: /en/experience.html
+Disallow: /de/experience.html
+Disallow: /fr/experience.html
+Disallow: /it/experience.html
+Disallow: /assets/images/clients/
+Disallow: /assets/images/featured%20in/
+
+Sitemap: https://annakryzhanivska.com/sitemap.xml
