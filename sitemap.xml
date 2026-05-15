@@ -1,57 +1,400 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://annakryzhanivska.com/en/index.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/index.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/de/index.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/index.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/fr/index.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/index.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/it/index.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/index.html"/>
   </url>
   <url>
     <loc>https://annakryzhanivska.com/en/services.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/services.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/de/services.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/services.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/fr/services.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/services.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/it/services.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/services.html"/>
   </url>
   <url>
     <loc>https://annakryzhanivska.com/en/portfolio.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/de/portfolio.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/fr/portfolio.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/it/portfolio.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio.html"/>
   </url>
   <url>
     <loc>https://annakryzhanivska.com/en/portfolio-campaign.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-campaign.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/de/portfolio-campaign.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-campaign.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/fr/portfolio-campaign.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-campaign.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/it/portfolio-campaign.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-campaign.html"/>
   </url>
   <url>
     <loc>https://annakryzhanivska.com/en/portfolio-model-ecommerce.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-model-ecommerce.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/de/portfolio-model-ecommerce.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-model-ecommerce.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/fr/portfolio-model-ecommerce.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-model-ecommerce.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/it/portfolio-model-ecommerce.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-model-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-model-ecommerce.html"/>
   </url>
   <url>
     <loc>https://annakryzhanivska.com/en/portfolio-packshot.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-packshot.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/de/portfolio-packshot.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-packshot.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/fr/portfolio-packshot.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-packshot.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/it/portfolio-packshot.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-packshot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-packshot.html"/>
   </url>
   <url>
     <loc>https://annakryzhanivska.com/en/portfolio-still-life.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-still-life.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/de/portfolio-still-life.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-still-life.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/fr/portfolio-still-life.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-still-life.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/it/portfolio-still-life.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/portfolio-still-life.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/portfolio-still-life.html"/>
   </url>
   <url>
     <loc>https://annakryzhanivska.com/en/faq.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/faq.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/de/faq.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/faq.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/fr/faq.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/faq.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/it/faq.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/faq.html"/>
   </url>
   <url>
     <loc>https://annakryzhanivska.com/en/contact.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/de/contact.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/fr/contact.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://annakryzhanivska.com/it/contact.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://annakryzhanivska.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://annakryzhanivska.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annakryzhanivska.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://annakryzhanivska.com/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annakryzhanivska.com/en/contact.html"/>
   </url>
 </urlset>
