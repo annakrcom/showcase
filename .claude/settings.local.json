@@ -12,7 +12,8 @@
       "Bash(curl -fsSL -o Inter-Bold.woff2 \"https://rsms.me/inter/font-files/Inter-Bold.woff2?v=4.0\")",
       "Bash(file /Users/annakryzhanivska/WebstormProjects/porto/assets/fonts/inter/*.woff2)",
       "Bash(xxd)",
-      "Bash(sips *)"
+      "Bash(sips *)",
+      "Bash(python3 *)"
     ]
   }
 }
