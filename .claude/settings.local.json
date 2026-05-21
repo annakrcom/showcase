@@ -13,7 +13,13 @@
       "Bash(file /Users/annakryzhanivska/WebstormProjects/porto/assets/fonts/inter/*.woff2)",
       "Bash(xxd)",
       "Bash(sips *)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(git -C /Users/annakryzhanivska/WebstormProjects/porto log --oneline -20 -- assets/js/cookie-consent.js)",
+      "Bash(git -C /Users/annakryzhanivska/WebstormProjects/porto log --all --oneline --grep=\"clarity\" -i)",
+      "Bash(git -C /Users/annakryzhanivska/WebstormProjects/porto branch -a)",
+      "Bash(git -C /Users/annakryzhanivska/WebstormProjects/porto log --all --oneline -20)",
+      "Bash(git -C /Users/annakryzhanivska/WebstormProjects/porto diff HEAD origin/master -- assets/js/cookie-consent.js)",
+      "Bash(git -C /Users/annakryzhanivska/WebstormProjects/porto show origin/master:assets/js/cookie-consent.js)"
     ]
   }
 }

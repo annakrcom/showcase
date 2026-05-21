@@ -1,19 +1,15 @@
 /*
  * Cookie consent (GDPR opt-in).
  *
- * Stores user choice in localStorage for 365 days. Tracking scripts
- * (GA4 + Microsoft Clarity) are blocked by default and only injected
- * after the user clicks "Accept".
- *
- * Replace the placeholder IDs below with the real ones once you
- * have created the GA4 property and Clarity project.
+ * Stores user choice in localStorage for 365 days. The Google Tag
+ * Manager container (which in turn loads GA4 + Microsoft Clarity) is
+ * blocked by default and only injected after the user clicks "Accept".
  */
 (function () {
   'use strict';
 
   // ---------- Configuration ----------
-  var GA_MEASUREMENT_ID  = 'GA_MEASUREMENT_ID';   // e.g. 'G-XXXXXXXXXX'
-  var CLARITY_PROJECT_ID = 'CLARITY_PROJECT_ID';  // e.g. 'abcdefghij'
+  var GTM_CONTAINER_ID = 'GTM-TCSTW6KS';
 
   var STORAGE_KEY        = 'cookie_consent';
   var LANG_OVERRIDE_KEY  = 'cookie_consent_lang';
@@ -118,41 +114,25 @@
   }
 
   // ---------- Tracking script injection ----------
-  function isPlaceholder(id, name) {
-    return !id || id === name;
-  }
+  function loadGTM() {
+    if (!GTM_CONTAINER_ID) return;
+    if (window.__gtmLoaded) return;
+    window.__gtmLoaded = true;
 
-  function loadGA() {
-    if (isPlaceholder(GA_MEASUREMENT_ID, 'GA_MEASUREMENT_ID')) return;
-    if (window.__gaLoaded) return;
-    window.__gaLoaded = true;
-
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_MEASUREMENT_ID);
-    document.head.appendChild(s);
-
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () { window.dataLayer.push(arguments); };
-    window.gtag('js', new Date());
-    window.gtag('config', GA_MEASUREMENT_ID, { anonymize_ip: true });
-  }
-
-  function loadClarity() {
-    if (isPlaceholder(CLARITY_PROJECT_ID, 'CLARITY_PROJECT_ID')) return;
-    if (window.__clarityLoaded) return;
-    window.__clarityLoaded = true;
-
-    (function (c, l, a, r, i, t, y) {
-      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
-      t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
-      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-    })(window, document, 'clarity', 'script', CLARITY_PROJECT_ID);
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l !== 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', GTM_CONTAINER_ID);
   }
 
   function loadAnalytics() {
-    loadGA();
-    loadClarity();
+    loadGTM();
   }
 
   // ---------- Banner DOM ----------
