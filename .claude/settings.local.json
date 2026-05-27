@@ -21,7 +21,9 @@
       "Bash(git -C /Users/annakryzhanivska/WebstormProjects/porto diff HEAD origin/master -- assets/js/cookie-consent.js)",
       "Bash(git -C /Users/annakryzhanivska/WebstormProjects/porto show origin/master:assets/js/cookie-consent.js)",
       "Bash(xargs -I{} sh -c 'grep -L \"rel=\\\\\"canonical\\\\\"\" \"{}\" 2>/dev/null')",
-      "Bash(curl -sI \"https://annakryzhanivska.com/assets/images/og-preview.jpg\")"
+      "Bash(curl -sI \"https://annakryzhanivska.com/assets/images/og-preview.jpg\")",
+      "Bash(curl -s \"https://annakryzhanivska.com/assets/images/og-preview.jpg\" -o /tmp/og-fetch.jpg)",
+      "Read(//tmp/**)"
     ]
   }
 }
