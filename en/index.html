@@ -200,13 +200,23 @@
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="lang-switch">
-        <a href="index.html" class="active">EN</a>
-        <a href="../de/index.html">DE</a>
-        <a href="../fr/index.html">FR</a>
-        <a href="../it/index.html">IT</a>
+      <div class="lang-dropdown">
+        <button class="lang-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="listbox" aria-label="Change language">
+          <svg class="lang-dropdown-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>
+          <span>EN</span>
+          <span class="lang-dropdown-chevron" aria-hidden="true">▾</span>
+        </button>
+        <ul class="lang-dropdown-menu" hidden>
+          <li><a href="index.html" class="active">English</a></li>
+          <li><a href="../de/index.html">Deutsch</a></li>
+          <li><a href="../fr/index.html">Français</a></li>
+          <li><a href="../it/index.html">Italiano</a></li>
+        </ul>
       </div>
-      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg class="nav-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+        <span>Menu</span>
+      </button>
     </div>
   </header>
 
@@ -237,7 +247,7 @@
       <p>The agency evolved from Anna's professional background in photography. Transitioning into specialized retouching, she achieved a placement in the top 0.5% of talent on a leading UK based freelance platform within eighteen months. In 2019, this performance was recognized with the Female Freelancer of the Year award.</p>
 
       <h3>A Decade of Scale</h3>
-      <p>Ten years of industry operations have defined our expertise in managing high capacity workflows while maintaining visual integrity. The team provides scalable photo post production for fashion campaigns and large scale ecommerce catalogs, meeting the aesthetic and technical standards of premium international markets.</p>
+      <p><a href="experience.html" class="about-inline-link">Ten years of industry operations</a> have defined our expertise in managing high capacity workflows while maintaining visual integrity. The team provides scalable photo post production for fashion campaigns and large scale ecommerce catalogs, meeting the aesthetic and technical standards of premium international markets.</p>
 
       <h3>Technical Expertise</h3>
       <p>Our technical approach balances production efficiency with technical precision. We optimize workflows to deliver consistent results and rational resource management. The team handles garment symmetry, defect removal, and model skin work to ensure multi SKU consistency across large volumes of assets. Core capabilities focus on image retouching for fashion and ecommerce catalogs.</p>
@@ -247,6 +257,10 @@
 
       <h3>Market Alignment</h3>
       <p>Our infrastructure meets global creative market standards and provides visual continuity for brands across international regions. We remain flexible and open to the specific requirements and individual preferences of every client. Full discretion and non disclosure agreements are available upon request to ensure project security.</p>
+
+      <p class="about-cta">
+        <a class="btn" href="experience.html">See Our Experience</a>
+      </p>
     </div>
   </section>
 

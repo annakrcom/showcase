@@ -197,13 +197,23 @@
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contatti</a>
       </nav>
-      <div class="lang-switch">
-        <a href="../en/index.html">EN</a>
-        <a href="../de/index.html">DE</a>
-        <a href="../fr/index.html">FR</a>
-        <a href="index.html" class="active">IT</a>
+      <div class="lang-dropdown">
+        <button class="lang-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="listbox" aria-label="Cambia lingua">
+          <svg class="lang-dropdown-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>
+          <span>IT</span>
+          <span class="lang-dropdown-chevron" aria-hidden="true">▾</span>
+        </button>
+        <ul class="lang-dropdown-menu" hidden>
+          <li><a href="../en/index.html">English</a></li>
+          <li><a href="../de/index.html">Deutsch</a></li>
+          <li><a href="../fr/index.html">Français</a></li>
+          <li><a href="index.html" class="active">Italiano</a></li>
+        </ul>
       </div>
-      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <button class="nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false">
+        <svg class="nav-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+        <span>Menu</span>
+      </button>
     </div>
   </header>
 
@@ -234,7 +244,7 @@
       <p>L'agenzia è nata dal background professionale di Anna nella fotografia. Passando al ritocco specializzato, si è classificata nello 0,5% dei migliori talenti su una delle principali piattaforme britanniche di freelance entro diciotto mesi. Nel 2019 questa performance è stata premiata con il Female Freelancer of the Year Award.</p>
 
       <h3>Un decennio di crescita</h3>
-      <p>Dieci anni di attività hanno definito la nostra esperienza nella gestione di workflow ad alta capacità, mantenendo l'integrità visiva. Il team offre una post-produzione fotografica scalabile per campagne di moda e cataloghi e-commerce su larga scala, conformi agli standard estetici e tecnici dei mercati internazionali di alto livello.</p>
+      <p><a href="experience.html" class="about-inline-link">Dieci anni di attività</a> hanno definito la nostra esperienza nella gestione di workflow ad alta capacità, mantenendo l'integrità visiva. Il team offre una post-produzione fotografica scalabile per campagne di moda e cataloghi e-commerce su larga scala, conformi agli standard estetici e tecnici dei mercati internazionali di alto livello.</p>
 
       <h3>Competenza tecnica</h3>
       <p>Il nostro approccio tecnico unisce efficienza produttiva e precisione tecnica. Ottimizziamo i workflow per garantire risultati coerenti e una gestione razionale delle risorse. Il team si occupa della simmetria dei capi, della rimozione dei difetti e del lavoro sulla pelle dei modelli per garantire la coerenza multi-SKU su grandi volumi di asset. Le competenze chiave si concentrano sul ritocco di immagini per cataloghi di moda ed e-commerce.</p>
@@ -244,6 +254,10 @@
 
       <h3>Allineamento al mercato</h3>
       <p>La nostra infrastruttura risponde agli standard del mercato creativo globale e garantisce continuità visiva ai marchi tra le diverse regioni internazionali. Restiamo flessibili e aperti alle specifiche esigenze e preferenze individuali di ogni cliente. Completa discrezione e accordi di riservatezza (NDA) sono disponibili su richiesta per garantire la sicurezza del progetto.</p>
+
+      <p class="about-cta">
+        <a class="btn" href="experience.html">Vedi la nostra esperienza</a>
+      </p>
     </div>
   </section>
 

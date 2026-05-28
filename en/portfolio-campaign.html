@@ -53,13 +53,23 @@
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="lang-switch">
-        <a href="portfolio-campaign.html" class="active">EN</a>
-        <a href="../de/portfolio-campaign.html">DE</a>
-        <a href="../fr/portfolio-campaign.html">FR</a>
-        <a href="../it/portfolio-campaign.html">IT</a>
+      <div class="lang-dropdown">
+        <button class="lang-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="listbox" aria-label="Change language">
+          <svg class="lang-dropdown-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>
+          <span>EN</span>
+          <span class="lang-dropdown-chevron" aria-hidden="true">▾</span>
+        </button>
+        <ul class="lang-dropdown-menu" hidden>
+          <li><a href="portfolio-campaign.html" class="active">English</a></li>
+          <li><a href="../de/portfolio-campaign.html">Deutsch</a></li>
+          <li><a href="../fr/portfolio-campaign.html">Français</a></li>
+          <li><a href="../it/portfolio-campaign.html">Italiano</a></li>
+        </ul>
       </div>
-      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg class="nav-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+        <span>Menu</span>
+      </button>
     </div>
   </header>
 

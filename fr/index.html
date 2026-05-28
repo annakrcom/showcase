@@ -197,13 +197,23 @@
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="lang-switch">
-        <a href="../en/index.html">EN</a>
-        <a href="../de/index.html">DE</a>
-        <a href="index.html" class="active">FR</a>
-        <a href="../it/index.html">IT</a>
+      <div class="lang-dropdown">
+        <button class="lang-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="listbox" aria-label="Changer de langue">
+          <svg class="lang-dropdown-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>
+          <span>FR</span>
+          <span class="lang-dropdown-chevron" aria-hidden="true">▾</span>
+        </button>
+        <ul class="lang-dropdown-menu" hidden>
+          <li><a href="../en/index.html">English</a></li>
+          <li><a href="../de/index.html">Deutsch</a></li>
+          <li><a href="index.html" class="active">Français</a></li>
+          <li><a href="../it/index.html">Italiano</a></li>
+        </ul>
       </div>
-      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg class="nav-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+        <span>Menu</span>
+      </button>
     </div>
   </header>
 
@@ -234,7 +244,7 @@
       <p>L'agence a évolué à partir de la formation professionnelle d'Anna en photographie. En se tournant vers la retouche spécialisée, elle s'est hissée parmi les 0,5 % de meilleurs talents d'une plateforme britannique majeure de freelance en dix-huit mois. En 2019, cette performance a été récompensée par le prix Female Freelancer of the Year.</p>
 
       <h3>Une décennie d'envergure</h3>
-      <p>Dix années d'activité ont défini notre expertise dans la gestion de workflows à forte capacité tout en préservant l'intégrité visuelle. L'équipe propose une post-production photo évolutive pour les campagnes de mode et les catalogues e-commerce à grande échelle, conforme aux standards esthétiques et techniques des marchés internationaux haut de gamme.</p>
+      <p><a href="experience.html" class="about-inline-link">Dix années d'activité</a> ont défini notre expertise dans la gestion de workflows à forte capacité tout en préservant l'intégrité visuelle. L'équipe propose une post-production photo évolutive pour les campagnes de mode et les catalogues e-commerce à grande échelle, conforme aux standards esthétiques et techniques des marchés internationaux haut de gamme.</p>
 
       <h3>Expertise technique</h3>
       <p>Notre approche technique allie efficacité de production et précision technique. Nous optimisons les workflows pour livrer des résultats cohérents et une gestion rationnelle des ressources. L'équipe gère la symétrie des vêtements, la suppression des défauts et le travail de la peau des modèles afin d'assurer une cohérence multi-SKU sur de grands volumes d'assets. Nos compétences principales se concentrent sur la retouche d'images pour les catalogues mode et e-commerce.</p>
@@ -244,6 +254,10 @@
 
       <h3>Adéquation au marché</h3>
       <p>Notre infrastructure répond aux standards du marché créatif mondial et assure une continuité visuelle pour les marques à travers les régions internationales. Nous restons flexibles et ouverts aux exigences spécifiques et aux préférences individuelles de chaque client. Une discrétion totale et des accords de confidentialité sont disponibles sur demande pour garantir la sécurité du projet.</p>
+
+      <p class="about-cta">
+        <a class="btn" href="experience.html">Voir notre expérience</a>
+      </p>
     </div>
   </section>
 

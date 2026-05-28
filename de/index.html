@@ -197,13 +197,23 @@
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Kontakt</a>
       </nav>
-      <div class="lang-switch">
-        <a href="../en/index.html">EN</a>
-        <a href="index.html" class="active">DE</a>
-        <a href="../fr/index.html">FR</a>
-        <a href="../it/index.html">IT</a>
+      <div class="lang-dropdown">
+        <button class="lang-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="listbox" aria-label="Sprache ändern">
+          <svg class="lang-dropdown-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>
+          <span>DE</span>
+          <span class="lang-dropdown-chevron" aria-hidden="true">▾</span>
+        </button>
+        <ul class="lang-dropdown-menu" hidden>
+          <li><a href="../en/index.html">English</a></li>
+          <li><a href="index.html" class="active">Deutsch</a></li>
+          <li><a href="../fr/index.html">Français</a></li>
+          <li><a href="../it/index.html">Italiano</a></li>
+        </ul>
       </div>
-      <button class="nav-toggle" aria-label="Menü">☰</button>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">
+        <svg class="nav-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+        <span>Menü</span>
+      </button>
     </div>
   </header>
 
@@ -234,7 +244,7 @@
       <p>Die Agentur entwickelte sich aus Annas professionellem Hintergrund in der Fotografie. Im Übergang zur spezialisierten Retusche erreichte sie innerhalb von achtzehn Monaten eine Platzierung in den Top 0,5 % der Talente auf einer führenden britischen Freelancer-Plattform. 2019 wurde diese Leistung mit dem Female-Freelancer-of-the-Year-Award gewürdigt.</p>
 
       <h3>Ein Jahrzehnt Skalierung</h3>
-      <p>Zehn Jahre Branchenpraxis haben unsere Expertise im Management von Workflows hoher Kapazität bei gleichzeitiger Wahrung visueller Integrität definiert. Das Team bietet skalierbare Foto-Postproduktion für Modekampagnen und großangelegte E-Commerce-Kataloge und erfüllt die ästhetischen und technischen Standards führender internationaler Märkte.</p>
+      <p><a href="experience.html" class="about-inline-link">Zehn Jahre Branchenpraxis</a> haben unsere Expertise im Management von Workflows hoher Kapazität bei gleichzeitiger Wahrung visueller Integrität definiert. Das Team bietet skalierbare Foto-Postproduktion für Modekampagnen und großangelegte E-Commerce-Kataloge und erfüllt die ästhetischen und technischen Standards führender internationaler Märkte.</p>
 
       <h3>Technische Expertise</h3>
       <p>Unser technischer Ansatz vereint Produktionseffizienz mit technischer Präzision. Wir optimieren Workflows, um konsistente Ergebnisse und ein durchdachtes Ressourcenmanagement zu liefern. Das Team übernimmt Kleidungssymmetrie, Fehlerentfernung und Hautretusche und sorgt für Multi-SKU-Konsistenz über große Asset-Mengen hinweg. Unsere Kernkompetenzen liegen in der Bildretusche für Mode- und E-Commerce-Kataloge.</p>
@@ -244,6 +254,10 @@
 
       <h3>Marktanpassung</h3>
       <p>Unsere Infrastruktur erfüllt globale Standards des kreativen Marktes und bietet visuelle Kontinuität für Marken über internationale Regionen hinweg. Wir bleiben flexibel und offen für die spezifischen Anforderungen und individuellen Präferenzen jedes Kunden. Vollständige Diskretion und Vertraulichkeitsvereinbarungen (NDA) sind auf Anfrage verfügbar, um die Projektsicherheit zu gewährleisten.</p>
+
+      <p class="about-cta">
+        <a class="btn" href="experience.html">Unsere Erfahrung ansehen</a>
+      </p>
     </div>
   </section>
 

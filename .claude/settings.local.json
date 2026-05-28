@@ -23,7 +23,11 @@
       "Bash(xargs -I{} sh -c 'grep -L \"rel=\\\\\"canonical\\\\\"\" \"{}\" 2>/dev/null')",
       "Bash(curl -sI \"https://annakryzhanivska.com/assets/images/og-preview.jpg\")",
       "Bash(curl -s \"https://annakryzhanivska.com/assets/images/og-preview.jpg\" -o /tmp/og-fetch.jpg)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(echo \"started pid=$!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8765/en/index.html)",
+      "Bash(curl -s http://localhost:8765/en/index.html)",
+      "Bash(kill 69456)"
     ]
   }
 }

@@ -4,8 +4,40 @@ document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('.nav');
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
-      nav.classList.toggle('open');
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
+  }
+
+  // Language dropdown
+  var langDropdown = document.querySelector('.lang-dropdown');
+  if (langDropdown) {
+    var langToggle = langDropdown.querySelector('.lang-dropdown-toggle');
+    var langMenu = langDropdown.querySelector('.lang-dropdown-menu');
+    if (langToggle && langMenu) {
+      var closeLang = function () {
+        langMenu.hidden = true;
+        langToggle.setAttribute('aria-expanded', 'false');
+      };
+      langToggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (langMenu.hidden) {
+          langMenu.hidden = false;
+          langToggle.setAttribute('aria-expanded', 'true');
+        } else {
+          closeLang();
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (!langDropdown.contains(e.target)) closeLang();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !langMenu.hidden) {
+          closeLang();
+          langToggle.focus();
+        }
+      });
+    }
   }
 
   var currentYear = String(new Date().getFullYear());
