@@ -351,7 +351,8 @@ p { margin: 0 0 1rem; color: var(--muted); }
 .container > .section-title:first-child {
   animation: page-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) 0.05s both;
 }
-.container > .section-title:first-child + * {
+.container > .section-title:first-child + *,
+.container > .section-title:first-child + .section-note + * {
   animation: page-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) 0.25s both;
 }
 .contact-grid > .contact-left {
@@ -366,6 +367,7 @@ p { margin: 0 0 1rem; color: var(--muted); }
 @media (prefers-reduced-motion: reduce) {
   .container > .section-title:first-child,
   .container > .section-title:first-child + *,
+  .container > .section-title:first-child + .section-note + *,
   .contact-grid > .contact-left,
   .contact-grid > .contact-right,
   .contact-grid > .contact-direct-full { animation: none; }
@@ -373,7 +375,9 @@ p { margin: 0 0 1rem; color: var(--muted); }
 
 /* Services + Our Work: stagger each card in one-by-one instead of the whole grid */
 .container > .section-title:first-child + .services-grid,
-.container > .section-title:first-child + .work-grid { animation: none; }
+.container > .section-title:first-child + .work-grid,
+.container > .section-title:first-child + .section-note + .services-grid,
+.container > .section-title:first-child + .section-note + .work-grid { animation: none; }
 .services-grid > .card,
 .work-grid > .work-card {
   animation: page-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) backwards;
@@ -450,6 +454,15 @@ section:first-of-type:not(.hero) { padding-top: 1.75rem; }
 }
 .section-title .eyebrow a { color: var(--text); transition: color 0.2s; }
 .section-title .eyebrow a:hover { color: var(--accent); }
+.section-note {
+  text-align: center;
+  max-width: 640px;
+  margin: -1.75rem auto 3rem;
+  font-size: 0.95rem;
+  color: var(--text);
+  opacity: 0.72;
+  font-style: italic;
+}
 
 /* ---------- Grids ---------- */
 .grid { display: grid; gap: 1.5rem; }
@@ -1109,11 +1122,6 @@ section.contact-grid { padding: 1.75rem 1.5rem 2.5rem; }
 .form-helper {
   font-size: 0.8rem; color: var(--muted);
   margin: 1rem 0 0;
-  background-image: linear-gradient(180deg, var(--accent) 0%, transparent 100%);
-  background-size: 2px 100%;
-  background-position: left top;
-  background-repeat: no-repeat;
-  padding: 0.2rem 0 0.2rem 0.85rem;
   line-height: 1.5;
 }
 

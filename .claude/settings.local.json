@@ -27,7 +27,11 @@
       "Bash(echo \"started pid=$!\")",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8765/en/index.html)",
       "Bash(curl -s http://localhost:8765/en/index.html)",
-      "Bash(kill 69456)"
+      "Bash(kill 69456)",
+      "Bash(git -C /Users/annakryzhanivska/WebstormProjects/porto log --oneline -5)",
+      "Bash(git -C /Users/annakryzhanivska/WebstormProjects/porto log --diff-filter=M -1 --pretty=format:'%h %ad %s' --date=short -- de/index.html)",
+      "WebFetch(domain:annakryzhanivska.com)",
+      "Bash(curl -s https://annakryzhanivska.com/de/index.html)"
     ]
   }
 }
